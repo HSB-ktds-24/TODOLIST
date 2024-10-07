@@ -1,6 +1,6 @@
 package com.ktdsuniversity.edu.list.vo;
 
-public class ListWriteVO {
+public class WriteScheduleVO {
 	
 	private String subject;
 	private String deadLine;

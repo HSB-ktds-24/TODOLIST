@@ -1,6 +1,6 @@
 package com.ktdsuniversity.edu.list.vo;
 
-public class ListVO {
+public class ScheduleVO {
 	
 	private int id;
 	private String isDone;
