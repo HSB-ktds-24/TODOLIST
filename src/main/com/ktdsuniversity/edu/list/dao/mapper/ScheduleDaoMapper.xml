@@ -6,7 +6,7 @@
 <mapper namespace="com.ktdsuniversity.edu.list.dao.ScheduleListDao">
 	<insert id="insertSchedule" 
 	parameterType="com.ktdsuniversity.edu.list.vo.WriteScheduleVO">
-	INSERT INTO [테이블명]
+	INSERT INTO TODOLIST
 	 ( ID,
 	   SUBJECT,
 	   DEADLINE,
@@ -18,13 +18,13 @@
 	  0)
 	</insert>
 	<update id="updateState" parameterType="_int">
-	UPDATE [테이블명]
+	UPDATE TODOLIST
 	   SET ISDONE = 'Y'
 	 WHERE ID = #{_parameter}
 	</update>
 	
 	<delete id="deleteSchedule" parameterType="_int">
-	 DELETE FROM [테이블명]
+	 DELETE FROM TODOLIST
 	  WHERE ID = #{_parameter}
 	</delete>
 	<select id="selectAllScheduleList" 
@@ -33,6 +33,6 @@
 		 , SUBJECT 
 		 , TO_CHAR(DEADLINE, 'YYYY-MM-DD') DEADLINE
 		 , ISDONE 
-	  FROM PLANBOARD
+	  FROM TODOLIST
 	</select>
 </mapper>
